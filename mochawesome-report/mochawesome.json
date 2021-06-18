@@ -1,0 +1,138 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-18T16:48:53.441Z",
+    "end": "2021-06-18T16:49:17.063Z",
+    "duration": 23622,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a4ed50f8-8693-45d3-adde-38122c9d0273",
+      "title": "",
+      "fullFile": "cypress/integration/test/unitTest.spec.js",
+      "file": "cypress/integration/test/unitTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fff2fabb-adb9-4dd0-94c8-b423f471271e",
+          "title": "Units tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be Possible to filter and go to an unit using one argument",
+              "fullTitle": "Units tests Should be Possible to filter and go to an unit using one argument",
+              "timedOut": null,
+              "duration": 7408,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('POST', ' https://www.fleury.com.br/cdn-cgi/rum?req_id=*').as('setReq');\ncy.intercept('POST', 'https://search-grp-fry-pub-y7cql2malisjawhtcy5dep5e5u.us-west-2.es.amazonaws.com/fleury*/_search').as('setSearch');\nCypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.goToHomePage();\ncy.get(':nth-child(6) > .framecomponentstyle__FrameStyled-qydu6h-0 > #button-vertical-title-quick-access > .buttoncomponentstyle__ButtonContentStyled-sc-11us3l0-3 > .animationcomponentstyle__ForcedFade-sc-7lsrx1-1 > #test-vertical-icon-title').should('be.visible').click();\ncy.wait('@setReq');\ncy.get('.checkbox-selectcomponentstyle__CheckboxSelectPlaceholderStyled-sc-7ktrvg-2').click();\ncy.contains('Vacinação').click();\ncy.get('#checkoox-select-facilities > .svg-inline--fa').click();\ncy.get('#unit-cell-alphaville').should('be.visible');\ncy.get('#anchor-unit-cell-alphaville > :nth-child(1) > .sc-htpNat > .boxcomponentstyle__HboxStyled-sc-43ermp-0 > .kVNSgu > .typographycomponentstyle__H3-sc-1oox73n-3').click();\ncy.wait('@setReq');\ncy.get('.typographycomponentstyle__H1-sc-1oox73n-1').should('be.visible').should('have.text', 'Alphaville');",
+              "err": {},
+              "uuid": "5a63424a-dfe1-43e1-855d-2d7c894658f1",
+              "parentUUID": "fff2fabb-adb9-4dd0-94c8-b423f471271e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should be Possible to filter and go to an unit using two arguments",
+              "fullTitle": "Units tests Should be Possible to filter and go to an unit using two arguments",
+              "timedOut": null,
+              "duration": 8102,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('POST', ' https://www.fleury.com.br/cdn-cgi/rum?req_id=*').as('setReq');\ncy.intercept('POST', 'https://search-grp-fry-pub-y7cql2malisjawhtcy5dep5e5u.us-west-2.es.amazonaws.com/fleury*/_search').as('setSearch');\nCypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.goToHomePage();\ncy.get(':nth-child(6) > .framecomponentstyle__FrameStyled-qydu6h-0 > #button-vertical-title-quick-access > .buttoncomponentstyle__ButtonContentStyled-sc-11us3l0-3 > .animationcomponentstyle__ForcedFade-sc-7lsrx1-1 > #test-vertical-icon-title').should('be.visible').click();\ncy.wait('@setReq');\ncy.get('.checkbox-selectcomponentstyle__CheckboxSelectPlaceholderStyled-sc-7ktrvg-2').click();\ncy.contains('Vacinação').click();\ncy.contains('Próximo ao metrô').click();\ncy.get('#checkoox-select-facilities > .svg-inline--fa').click();\ncy.get('#unit-cell-paraiso').should('be.visible');\ncy.get('#anchor-unit-cell-paraiso > :nth-child(1) > .sc-htpNat > .boxcomponentstyle__HboxStyled-sc-43ermp-0 > .kVNSgu > .typographycomponentstyle__H3-sc-1oox73n-3').click();\ncy.wait('@setReq');\ncy.get('.typographycomponentstyle__H1-sc-1oox73n-1').should('be.visible').should('have.text', 'Paraíso');",
+              "err": {},
+              "uuid": "c9db54cf-d4ac-47d0-b153-36e058d5749a",
+              "parentUUID": "fff2fabb-adb9-4dd0-94c8-b423f471271e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should be Possible to filter and go to an unit using tree arguments",
+              "fullTitle": "Units tests Should be Possible to filter and go to an unit using tree arguments",
+              "timedOut": null,
+              "duration": 7788,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('POST', ' https://www.fleury.com.br/cdn-cgi/rum?req_id=*').as('setReq');\ncy.intercept('POST', 'https://search-grp-fry-pub-y7cql2malisjawhtcy5dep5e5u.us-west-2.es.amazonaws.com/fleury*/_search').as('setSearch');\nCypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.goToHomePage();\ncy.get(':nth-child(6) > .framecomponentstyle__FrameStyled-qydu6h-0 > #button-vertical-title-quick-access > .buttoncomponentstyle__ButtonContentStyled-sc-11us3l0-3 > .animationcomponentstyle__ForcedFade-sc-7lsrx1-1 > #test-vertical-icon-title').should('be.visible').click();\ncy.wait('@setReq');\ncy.get('.checkbox-selectcomponentstyle__CheckboxSelectPlaceholderStyled-sc-7ktrvg-2').click();\ncy.contains('Vacinação').click();\ncy.contains('Próximo ao metrô').click();\ncy.contains('Atendimento aos domingos').click();\ncy.get('#checkoox-select-facilities > .svg-inline--fa').click();\ncy.get('#unit-cell-paraiso').should('be.visible');\ncy.get('#anchor-unit-cell-paraiso > :nth-child(1) > .sc-htpNat > .boxcomponentstyle__HboxStyled-sc-43ermp-0 > .kVNSgu > .typographycomponentstyle__H3-sc-1oox73n-3').click();\ncy.wait('@setReq');\ncy.get('.typographycomponentstyle__H1-sc-1oox73n-1').should('be.visible').should('have.text', 'Paraíso');",
+              "err": {},
+              "uuid": "bdd754b9-bbf7-49bd-b449-13cc49b83b97",
+              "parentUUID": "fff2fabb-adb9-4dd0-94c8-b423f471271e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5a63424a-dfe1-43e1-855d-2d7c894658f1",
+            "c9db54cf-d4ac-47d0-b153-36e058d5749a",
+            "bdd754b9-bbf7-49bd-b449-13cc49b83b97"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 23298,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
